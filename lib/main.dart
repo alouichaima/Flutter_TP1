@@ -38,7 +38,7 @@ class ConvertHomeState extends State<ConvertHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Convertisseur"),
+        title: Text("TP1 APP"),
         backgroundColor: Colors.purple,
       ),
       body: Center(
