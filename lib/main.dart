@@ -27,9 +27,9 @@ class ConvertHomeState extends State<ConvertHome> {
     setState(() {
       double montant = double.tryParse(_controller.text) ?? 0;
       if (_selectedConversion == "EuroToDinar") {
-        _resultat = montant * 3.6;
+        _resultat = montant * 3.38;
       } else {
-        _resultat = montant / 3.6;
+        _resultat = montant / 3.38;
       }
     });
   }
@@ -89,7 +89,7 @@ class ConvertHomeState extends State<ConvertHome> {
                 onPressed: _convertir,
                 child: Text("CONVERTIR"),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(255, 206, 148, 216),
+                  backgroundColor: const Color.fromRGBO(100, 100, 140, 140),
                   padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                   textStyle: TextStyle(fontSize: 18),
                 ),
